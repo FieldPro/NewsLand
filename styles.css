@@ -1,0 +1,186 @@
+
+body {
+    margin: 0;
+    background-color: pink;
+}
+
+/* For the tabs and links*/
+.tabs {
+    background-color: #ff0000;
+    height: 30px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+    color: #ffffff;
+    padding-left: 5px;
+    user-select: none; /* disabled text from being selected*/
+    font-weight: bold;
+}
+
+.carrier {
+    width: 900px;
+    margin: auto;
+}
+
+.topLinks {
+    margin: auto;
+    padding-top: 15px;
+}
+
+/* For search icon */
+.searchIcon {
+    width: 20px;
+    height: 16px;
+}
+
+.img1 {
+    width: 300px;
+}
+
+.gridAnime {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Creating margin to seperate*/
+.dropMargin {
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Article */
+.writeUp2 {
+    margin-left: 20px;
+}
+
+.writeUp3 {
+    margin-left: 25px;
+}
+
+.fitImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Image gradient color*/
+.fitImg1 {
+    margin-top: 15px;    
+    position: relative;
+    height: 450px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right bottom, #f2703d73, #732a1085), url('surrey.jpg');
+    /* Author:Mathijs Deerenberg https://unsplash.com/photos/RvJ8BhpLEMw */
+}
+
+.rollOn {
+    margin-top: 15px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.rollOn:hover {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    animation: rollImg 2s linear infinite;
+
+}
+
+/* Footer section*/
+.hrFooter {
+    color: #ffffff;
+}
+.footerColor {
+    background-color: #ff0000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+}
+
+.footerLinks {
+    padding-left: 5px;
+    color: #ffffff;
+}
+
+.footerLinks a {
+    color: #000000;
+}
+
+/* For Animation*/
+.slide1 {
+    animation-name: slide1;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    left: -250;
+    position: absolute;
+}
+
+.slide2 {
+    animation-name: slide2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    left: -250;
+    position: absolute;
+}
+
+.slide3 {
+    animation-name: slide3;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    left: -250;
+    position: absolute;
+}
+
+/* Social Icons*/
+.soc {
+    background-color: #ff0000;
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Change links color */
+nav a {
+    color: #ffffff;
+    padding-left: 15px;
+}
+
+span a {
+    color: #ff0000;
+}
+
+@keyframes slide1 {
+    0%      {left: -300px;}
+    100%    {left: 305px;}
+}
+
+@keyframes slide2 {
+    0%      {top: -300px; left: 620px;}
+    100%    {top: 74px; left: 620px;}
+}
+
+@keyframes slide3 {
+    0%      {right: -300px;}
+    100%    {right: 285px;}
+}
+
+/* Search image rolls - animation */
+@keyframes rollImg {
+    100% {transform: rotate(360deg); height: 200px; width: 200px;}
+}
